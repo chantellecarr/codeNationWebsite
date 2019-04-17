@@ -1,0 +1,314 @@
+body {
+    margin: 25px;
+    color: black;
+    font-size: 15px;
+    background-color: white;
+}
+
+h1 {
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    -webkit-column-span: all; /* Chrome, Safari, Opera */
+    column-span: all; /* internet explorer, edge */
+}
+
+h2 {
+    font-size: 17px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h3 {
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: gray;
+}
+
+/* layout */
+header {
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+    color: black;
+    border-style: dotted;
+    border-color: lightgray;
+}
+
+article {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    column-gap: 2em;
+    -webkit-column-rule: 0.5px solid black;
+    -moz-column-rule: 0.5px solid black;
+    column-rule: 0.5px solid black;
+}
+
+/* navigation */
+.navlinkMenuItem {
+    display: block;
+    list-style-type: none;
+    padding: 5px;
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+/* image boxes */
+.imageGrid {
+    display: grid;
+    grid-template-columns: 150px 150px;
+    grid-gap: 20px;
+    padding: 10px;
+}
+
+aside {
+    float: left;
+    padding: 10px;
+    width: 25%;
+}
+
+main {
+    margin-top: 15px;
+    width: 70%;
+    height: 320px;
+    float: right;
+    background-color: gray;
+    color: white;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+footer {
+    text-align: center;
+    color: blue;
+}
+
+.box {
+    border-radius: 5px;
+    padding: 0px;
+    width: 150px;
+    height: 150px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navLink:visited {
+    color: blue;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.navlink:focus {
+    color: blue;
+    background-color: cyan;
+}
+
+.navigation {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+hr {
+    width: 100%;
+    color: gray;
+}
+
+ol {
+    list-style-type: lower-roman;
+}
+
+.mainOl{
+    list-style-type: upper-roman;
+}
+
+ul {
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+li{
+    text-emphasis: normal;
+    text-align: left;
+    text-decoration-color: black;
+}
+
+.ulToolsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1 {
+    border-style: solid;
+    border-color: darkgray;
+    padding: 9px;
+    width: 30%;
+}
+
+.box2 {
+    border-style: solid;
+    border-color: gray;
+    width: 30%;
+}
+
+.fileTypeContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fileTypeContainer div {
+    padding: .5em;
+  }
+
+.boxHorizontal {
+    display: flex;
+    flex-direction: column;
+}
+
+.boxHorizontal:nth-child(1) {
+    background: lightgray;
+    flex-grow: 1;
+}
+
+.boxHorizontal:nth-child(2) {
+    background: darkgray;
+    flex-grow: 2;
+}
+
+.boxHorizontal:nth-child(3) {
+    background: lightgray;
+    flex-grow: 1;
+}
+
+.boxVertical {
+    flex-direction: row;
+}
+
+.boxVertical:nth-child(1) {
+    background: beige;
+    flex-direction: row;
+}
+
+.boxVertical:nth-child(2) {
+    background: bisque;
+    flex-direction: row;
+}
+
+.boxVertical:nth-child(3) {
+    background: beige;
+    flex-direction: row;
+}
+
+.boxVertical:nth-child(4) {
+    background: bisque;
+    flex-direction: row;
+}
+
+.boxVertical:nth-child(5) {
+    background: beige;
+    flex-direction: row;
+}
+
+.boxVertical:nth-child(6) {
+    background: bisque;
+    flex-direction: row;
+}
+
+.selectToolsPara {
+    border: 2px solid gray;  
+    background-color: lightgray;  
+    padding:5px;  
+    margin-top:5px;  
+    margin-bottom:5px;  
+    margin-left:20px;  
+    margin-right:20px;  
+}
+
+.flexboxContainer {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: space-between;
+}
+
+.flexbox {
+    text-align: center;
+    padding: 15px;
+    width: 30%;
+}
+
+.flexboxOdd {
+    background-color: gray;
+}
+
+.flexboxEven {
+    background-color: lightgray;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: auto auto auto;
+}
+
+.item-a {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    background-color: gray;
+    color: white;
+}
+
+.item-b {
+    grid-column: 1;
+    grid-row: 2;
+    background-color: lightgrey;
+    color: white;
+}
+
+.item-c {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: darkgray;
+    color: white;
+}
+
+.item-d {
+    grid-column: 3;
+    grid-row: 2;
+    background-color: lightgray;
+    color: white;
+}
+
+.item-e {
+    grid-column: 2 / span 2;
+    grid-row: 3;
+    background-color: gray;
+    color: white;
+}
+
+/* to do - make sure that the website different size screens and types of media works */
+/* medium screens, center it by evenly distributing empty space around items */
+@media all and (max-width: 800px) {
+    .navigation {
+        justify-content: space-around;  
+    }
+}
+
+/* small screens show by column rather than row direction */
+@media all and (max-width: 500px) {
+    .navigation {
+        flex-direction: column;
+    }
+}
